@@ -1,0 +1,15 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import { AppComponent } from './app.component';
+import { ParenthesesComponent } from './parentheses/parentheses.component';
+
+@NgModule({
+  imports: [BrowserModule, FormsModule, HttpClientModule, ReactiveFormsModule],
+  providers: [],
+  declarations: [AppComponent, ParenthesesComponent],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
